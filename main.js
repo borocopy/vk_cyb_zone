@@ -44,6 +44,7 @@ async function main() {
     console.log(latestPost);
 
     const res = await axios.post(
+      // Discord bot server api call
       `http://192.168.0.18:5001/api/vk_latest_post`,
       latestPost
     );
